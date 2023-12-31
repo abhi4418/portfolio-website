@@ -540,16 +540,6 @@ width: 40px;
     justify-content: center;
 }
 
-.skill-fade-text {
-    position: absolute; 
-    font-size: 15em;
-    font-style: bold;
-    color: rgb(231,231,231);
-    bottom: -34.8%;
-    right: -12%;
-    user-select: none;
-    overflow-y: hidden;
-}
 
 .blob-style {
     position: absolute ;
@@ -568,7 +558,8 @@ width: 40px;
 }
 
 .skills-logo {
-    width: 90px;
+    object-fit: contain;
+    width: 80px;
     transition: all 0.5s;
 }
 
@@ -707,4 +698,27 @@ footer {
 .icon-wrapper {
     display: flex;
     gap: 1rem;
+}
+
+.skill-fade-text {
+    position: absolute; 
+    font-size: 15em;
+    font-style: bold;
+    color: rgb(231,231,231);
+    bottom: -220px;
+    right: 100px;
+    user-select: none;
+    overflow-y: hidden;
+}
+
+@media (max-width:1200px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .skill-fade-text {
+        display: none;
+    }
 }
